@@ -3,12 +3,12 @@ int sideLength = 40;
 
 
 void setup() {
-  size(400,400);
+  size(400, 400);
   for (int y = 0; y < board.length; y++) {
     for (int x = 0; x < board.length; x++) {
-      if (x%2 == 0) {
+      if ((x+y)%2 == 0) {
         board[x][y] = 0;
-      } else if (y%2 == 0) {
+      } else {
         board[x][y] = 1;
       }
     }
